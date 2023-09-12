@@ -3,7 +3,7 @@
     "name": "CinemaWorld",
     "movies": [
       {
-        "title": "Movie A",
+        "title": "Heffarklumpen",
         "duration": "120 mins",
         "shows": [
           {
@@ -18,17 +18,33 @@
             ]
           },
           {
-            "time": "5:00 PM",
+            "time": "2023-09-20 17:00",
             "room": "Room 2",
             "seats": [
               {"seatNumber": "B1", "booked": false},
               {"seatNumber": "B2", "booked": true}
             ]
+          },
+          {
+            "time": "2023-09-30 17:00",
+            "room": "Room 3",
+"seats": [
+{"seatNumber": "C1", "booked": false},
+{"seatNumber": "C2", "booked": true}
+]
+          },
+          {
+"time": "2023-10-01 18:00",
+"room": "Room 4",
+"seats": [
+{"seatNumber": "d1", "booked": false},
+{"seatNumber": "d2", "booked": true}
+]
           }
-        ]
+       ]
       },
       {
-        "title": "Movie B",
+        "title": "Game of throwns",
         "duration": "100 mins",
         "shows": [
           {
@@ -38,16 +54,79 @@
               {"seatNumber": "C1", "booked": true},
               {"seatNumber": "C2", "booked": false}
             ]
-          }
+          },
+          {
+"time": "2023-09-09 19:00",
+"room": "Room 5",
+"seats": [{"seatNumber": "E1", "booked": false},
+{"seatNumber": "E2", "booked": true}
+]
+          },
+{
+  "time": "2023-09-12 20:00",
+"room": "Room 6",
+"seats": [
+{"seatNumber": "F1", "booked": false},
+{"seatNumber": "F2", "booked": true}
+]
+},
+{
+"time": "2023-10-06 17:30",
+"room": "Room 7",
+"seats": [
+{"seatNumber": "G1", "booked": false},
+{"seatNumber": "G2", "booked": true}
+
+]
+
+
+}
+
         ]
       },
       {
-        "title": "Movie C",
+        "title": "dunderklumpen",
         "duration": "140 mins",
-        "shows": []
+        "shows": [
+{
+"time": "2023-09-26 18:30",
+"room": "Room 8",
+"seats": [
+{"seatNumber": "H1", "booked": false},
+{"seatNumber": "H2", "booked": true}
+]
+
+},
+{
+"time": "2023-09-27 19:00",
+"room": "Room 9",
+"seats": [
+{"seatNumber": "I1", "booked": false},
+{"seatNumber": "I2", "booked": true}
+]
+},
+{
+"time": "2023-09-28 20:00",
+"room": "Room 10",
+"seats": [
+{"seatNumber": "J1", "booked": false},
+{"seatNumber": "J2", "booked": true}
+]
+},
+{
+"time": "2023-09-29",
+"room": "Room 11",
+"seats": [
+{"seatNumber": "11A", "booked": false},
+{"seatNumber": "11B", "booked": false}
+]
+}
+        ]
+
+
       },
       {
-        "title": "Movie D",
+        "title": "Karlsson på taket",
         "duration": "110 mins",
         "shows": [
           {
@@ -61,7 +140,7 @@
         ]
       },
       {
-        "title": "Movie E",
+        "title": "the boy in striped pyiamas",
         "duration": "90 mins",
         "shows": [
           {
@@ -79,4 +158,4 @@
       }
     ]
   }
-}
+  }

@@ -15,19 +15,19 @@ function App() {
                     throw new error('there was not ok');
                 }
                 const data = await response.json();
+                
             console.log("data", data);
-            const maped = cinemaData.map(cinemaData);
             
                 setCinemaData(data);
             } catch (err) {
                 setError(err);
             } finally {
-                setLoading(true)
+                setLoading(false)
             }
 
         };
         fetchData();
-    }
+    }, []
     );
     if (loading) {
         return <div>loading...</div>

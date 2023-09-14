@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState, useEffect } from 'react';
 import ReactDOM from 'react-dom/client'
-
+import Search from "./pages/Search/Search";
 import './App.css';
 function App() {
     const [cinemaData, setCinemaData] = useState(null);
@@ -41,6 +41,9 @@ function App() {
     return (
         <main>
             <h1 className='cinema'>{cinemaData.cinema.name}</h1>
+<Search />
+        
+        
         </main>
 
     )

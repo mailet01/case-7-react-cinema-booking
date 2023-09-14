@@ -10,38 +10,71 @@
             "time": "2023-09-07T16:00:00.000Z",
             "room": "Room 1",
             "seats": [
-              {"seatNumber": "A1", "booked": false},
-              {"seatNumber": "A2", "booked": true},
-              {"seatNumber": "A3", "booked": false},
-              {"seatNumber": "A4", "booked": false},
-              {"seatNumber": "A5", "booked": false}
+              {
+                "seatNumber": "A1",
+                "booked": false
+              },
+              {
+                "seatNumber": "A2",
+                "booked": true
+              },
+              {
+                "seatNumber": "A3",
+                "booked": false
+              },
+              {
+                "seatNumber": "A4",
+                "booked": false
+              },
+              {
+                "seatNumber": "A5",
+                "booked": false
+              }
             ]
           },
           {
             "time": "2023-09-20 17:00",
             "room": "Room 2",
             "seats": [
-              {"seatNumber": "B1", "booked": false},
-              {"seatNumber": "B2", "booked": true}
+              {
+                "seatNumber": "B1",
+                "booked": false
+              },
+              {
+                "seatNumber": "B2",
+                "booked": true
+              }
             ]
           },
           {
             "time": "2023-09-30 17:00",
             "room": "Room 3",
-"seats": [
-{"seatNumber": "C1", "booked": false},
-{"seatNumber": "C2", "booked": true}
-]
+            "seats": [
+              {
+                "seatNumber": "C1",
+                "booked": false
+              },
+              {
+                "seatNumber": "C2",
+                "booked": true
+              }
+            ]
           },
           {
-"time": "2023-10-01 18:00",
-"room": "Room 4",
-"seats": [
-{"seatNumber": "d1", "booked": false},
-{"seatNumber": "d2", "booked": true}
-]
+            "time": "2023-10-01 18:00",
+            "room": "Room 4",
+            "seats": [
+              {
+                "seatNumber": "d1",
+                "booked": false
+              },
+              {
+                "seatNumber": "d2",
+                "booked": true
+              }
+            ]
           }
-       ]
+        ]
       },
       {
         "title": "Game of throwns",
@@ -51,79 +84,121 @@
             "time": "2023-09-07T15:00:00.000Z",
             "room": "Room 3",
             "seats": [
-              {"seatNumber": "C1", "booked": true},
-              {"seatNumber": "C2", "booked": false}
+              {
+                "seatNumber": "C1",
+                "booked": true
+              },
+              {
+                "seatNumber": "C2",
+                "booked": false
+              }
             ]
           },
           {
-"time": "2023-09-09 19:00",
-"room": "Room 5",
-"seats": [{"seatNumber": "E1", "booked": false},
-{"seatNumber": "E2", "booked": true}
-]
+            "time": "2023-09-09 19:00",
+            "room": "Room 5",
+            "seats": [
+              {
+                "seatNumber": "E1",
+                "booked": false
+              },
+              {
+                "seatNumber": "E2",
+                "booked": true
+              }
+            ]
           },
-{
-  "time": "2023-09-12 20:00",
-"room": "Room 6",
-"seats": [
-{"seatNumber": "F1", "booked": false},
-{"seatNumber": "F2", "booked": true}
-]
-},
-{
-"time": "2023-10-06 17:30",
-"room": "Room 7",
-"seats": [
-{"seatNumber": "G1", "booked": false},
-{"seatNumber": "G2", "booked": true}
-
-]
-
-
-}
-
+          {
+            "time": "2023-09-12 20:00",
+            "room": "Room 6",
+            "seats": [
+              {
+                "seatNumber": "F1",
+                "booked": false
+              },
+              {
+                "seatNumber": "F2",
+                "booked": true
+              }
+            ]
+          },
+          {
+            "time": "2023-10-06 17:30",
+            "room": "Room 7",
+            "seats": [
+              {
+                "seatNumber": "G1",
+                "booked": false
+              },
+              {
+                "seatNumber": "G2",
+                "booked": true
+              }
+            ]
+          }
         ]
       },
       {
         "title": "dunderklumpen",
         "duration": "140 mins",
         "shows": [
-{
-"time": "2023-09-26 18:30",
-"room": "Room 8",
-"seats": [
-{"seatNumber": "H1", "booked": false},
-{"seatNumber": "H2", "booked": true}
-]
-
-},
-{
-"time": "2023-09-27 19:00",
-"room": "Room 9",
-"seats": [
-{"seatNumber": "I1", "booked": false},
-{"seatNumber": "I2", "booked": true}
-]
-},
-{
-"time": "2023-09-28 20:00",
-"room": "Room 10",
-"seats": [
-{"seatNumber": "J1", "booked": false},
-{"seatNumber": "J2", "booked": true}
-]
-},
-{
-"time": "2023-09-29",
-"room": "Room 11",
-"seats": [
-{"seatNumber": "11A", "booked": false},
-{"seatNumber": "11B", "booked": false}
-]
-}
+          {
+            "time": "2023-09-26 18:30",
+            "room": "Room 8",
+            "seats": [
+              {
+                "seatNumber": "H1",
+                "booked": false
+              },
+              {
+                "seatNumber": "H2",
+                "booked": true
+              }
+            ]
+          },
+          {
+            "time": "2023-09-27 19:00",
+            "room": "Room 9",
+            "seats": [
+              {
+                "seatNumber": "I1",
+                "booked": false
+              },
+              {
+                "seatNumber": "I2",
+                "booked": true
+              }
+            ]
+          },
+          {
+            "time": "2023-09-28 20:00",
+            "room": "Room 10",
+            "seats": [
+              {
+                "seatNumber": "J1",
+                "booked": false
+              },
+              {
+                "seatNumber": "J2",
+                "booked": true
+              }
+            ]
+          },
+          {
+            "time": "2023-09-29",
+            "room": "Room 11",
+            "seats": [
+              {
+                "seatNumber": "11A",
+                "booked": false
+              },
+              {
+                "seatNumber": "11B",
+                "booked": false
+              }
+            ]
+          }
         ]
-
-
       },
       {
         "title": "Karlsson på taket",
@@ -133,8 +208,14 @@
             "time": "2023-09-07T17:00:00.000Z",
             "room": "Room 2",
             "seats": [
-              {"seatNumber": "D1", "booked": false},
-              {"seatNumber": "D2", "booked": false}
+              {
+                "seatNumber": "D1",
+                "booked": false
+              },
+              {
+                "seatNumber": "D2",
+                "booked": false
+              }
             ]
           }
         ]
@@ -147,15 +228,30 @@
             "time": "2023-09-07T18:00:00.000Z",
             "room": "Room 1",
             "seats": [
-              {"seatNumber": "A1", "booked": false},
-              {"seatNumber": "A2", "booked": true},
-              {"seatNumber": "A3", "booked": false},
-              {"seatNumber": "A4", "booked": false},
-              {"seatNumber": "A5", "booked": false}
+              {
+                "seatNumber": "A1",
+                "booked": false
+              },
+              {
+                "seatNumber": "A2",
+                "booked": true
+              },
+              {
+                "seatNumber": "A3",
+                "booked": false
+              },
+              {
+                "seatNumber": "A4",
+                "booked": false
+              },
+              {
+                "seatNumber": "A5",
+                "booked": false
+              }
             ]
           }
         ]
       }
     ]
   }
-  }
+}

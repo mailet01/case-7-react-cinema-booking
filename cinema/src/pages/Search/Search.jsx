@@ -45,7 +45,9 @@ function Search() {
           
 
           {filteredMovies.map(movie => (<div className='movie' key={movie.title}><b>title: {movie.title}</b><small>duration: {movie.duration}</small><i></i></div>))}
-        <button >show dates</button>
+        <button onClick={() =>  movieData.cinema.movies}>show dates</button>
+        {filteredMovies.map(movie => (<div className='movie' key={movie.shows}> shows: {movie.shows.map(show => <p>{show.time}</p>)}</div>))}        
+        
         </div>
       </>
     )

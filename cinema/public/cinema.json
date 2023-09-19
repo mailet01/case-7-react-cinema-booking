@@ -249,6 +249,48 @@
                 "booked": false
               }
             ]
+          },
+          {
+            "time": "2023-09-0820:30",
+            "room": "Room 2",
+            "seats": [
+              {
+                "seatNumber": "B1",
+                "booked": false
+              },
+              {
+                "seatNumber": "B2",
+                "booked": true
+              }
+            ]
+          },
+          {
+            "time": "2023-10-0418:30",
+            "room": "Room 3",
+            "seats": [
+              {
+                "seatNumber": "C1",
+                "booked": false
+              },
+              {
+                "seatNumber": "C2",
+                "booked": true
+              }
+            ]
+          },
+          {
+            "time": "2023-10-1319:30",
+            "room": "Room 12",
+            "seats": [
+              {
+                "seatNumber": "L1",
+                "booked": false
+              },
+              {
+                "seatNumber": "L2",
+                "booked": true
+              }
+            ]
           }
         ]
       }

@@ -7,7 +7,7 @@ Välkommen till biografen Cinema World. De filmer som vi har är Heffarklumpen, 
 </p>
 <p>
 Du kan även söka bland våra filmer på länken nedan:
-<a href="Search.jsx"
+<a href="Search.jsx">sök här</a>
 </p>
 </>
 )

@@ -1,17 +1,17 @@
   import { useState, useEffect } from "react";
 function Search() {
-    // store book data in a stateful varible
+    
     const [movieData, setMovieData] = useState(null);
     const [isLoading, setIsLoading] = useState(true);
     const [searchString, setSearchString] = useState(null);
   
-    // fetch data on app loading
+    
     useEffect( () => {
       const fetchMovies = async () => {
         try {
         const response = await fetch("cinema.json");
   
-        // Check if everything is fine with fetching
+        
         if (!response.ok) {
           throw new Error("could not fetch data ");
         }
@@ -36,7 +36,7 @@ function Search() {
   console.log(filteredMovies);
     return (
       <>
-        <h1>Book App</h1>
+        <h1>emils bioapp</h1>
         <div>
           <input placeholder="Search " type="text" name="search" onInput={ e => setSearchString(e.target.value)} value={searchString}/>
           <button type="submit">search</button>

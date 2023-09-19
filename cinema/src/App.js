@@ -1,6 +1,8 @@
 import React from 'react'
 import { useState, useEffect } from 'react';
 import ReactDOM from 'react-dom/client'
+import Welcome from "./pages/Welcome/Welcome";
+import Booking from "./pages/Booking/Booking";
 import Search from "./pages/Search/Search";
 import './App.css';
 function App() {
@@ -15,9 +17,9 @@ function App() {
                     throw new error('there was not ok');
                 }
                 const data = await response.json();
-                
-            console.log("data", data);
-            
+
+                console.log("data", data);
+
                 setCinemaData(data);
             } catch (err) {
                 setError(err);
@@ -41,9 +43,11 @@ function App() {
     return (
         <main>
             <h1 className='cinema'>{cinemaData.cinema.name}</h1>
-<Search />
-        
-        
+            <Welcome />
+            <Booking />
+            <Search />
+
+
         </main>
 
     )

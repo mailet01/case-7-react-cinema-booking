@@ -20,7 +20,7 @@ function App() {
 
                 console.log("data", data);
 
-                setCinemaData(data);
+               setCinemaData(data);
             } catch (err) {
                 setError(err);
             } finally {
@@ -45,7 +45,7 @@ function App() {
             <h1 className='cinema'>{cinemaData.cinema.name}</h1>
             <Welcome />
             <Booking />
-            <Search />
+            <Search cinemaData={cinemaData} />
 
 
         </main>

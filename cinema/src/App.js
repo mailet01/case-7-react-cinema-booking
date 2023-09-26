@@ -44,7 +44,7 @@ function App() {
         <main>
             <h1 className='cinema'>{cinemaData.cinema.name}</h1>
             <Welcome />
-            <Booking />
+            <Booking cinemaData={cinemaData} />
             <Search cinemaData={cinemaData} />
 
 

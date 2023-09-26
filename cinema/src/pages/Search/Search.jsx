@@ -28,7 +28,7 @@ function Search({ cinemaData }) {
 
       {/* komponent */}
       <MovieList filteredMovies={filteredMovies} />
-      {/* <DateList filteredMovies={filteredMovies} /> */}
+       <DateList filteredMovies={filteredMovies} />
 <SeatList filteredMovies={filteredMovies} />
     </>
   );

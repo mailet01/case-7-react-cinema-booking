@@ -12,9 +12,9 @@ export function MovieList({ filteredMovies }) {
 
           <small>duration: {movie.duration}</small>
           {/* använd komponenten datelist */}
-      <DateList filtredDates={movie.shows} />
+      <DateList filteredMovies={movie.shows} />
       {/* använd komponenten SeatList */}
-<SeatList filtredSeats={movie.seats} />
+<SeatList filtredMovies={filteredMovies} />
         </li>
       ))}
     </ul>

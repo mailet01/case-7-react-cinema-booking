@@ -1,26 +1,11 @@
-export function DateList({ filtredDates }) {
-  console.log("filtredDates", filtredDates);
+export function DateList({ filteredMovies }) {
   return (
     <>
       <ul>
-        {filtredDates ? filtredDates.shows.map((show) => (
-          <li>{show.time}</li>
-        )) : null}
+        {filteredMovies.map((movie) =>
+          movie.shows?.map((show) => <li key={show.time}>{show.time}</li>)
+        )}
       </ul>
     </>
   );
-
-  // return (
-  //   <ul>
-  //     {filtredDates.map((movie) => (
-  //       <li key={movie.shows}>
-  //         {" "}
-  //         shows:{" "}
-  //         {movie.shows.map((show) => (
-  //           <h1>{show.time}</h1>
-  //         ))}
-  //       </li>
-  //     ))}
-  //   </ul>
-  // );
 }

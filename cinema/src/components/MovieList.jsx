@@ -14,7 +14,7 @@ export function MovieList({ filteredMovies }) {
           {/* använd komponenten datelist */}
       <DateList filteredMovies={movie.shows} />
       {/* använd komponenten SeatList */}
-<SeatList filtredMovies={filteredMovies} />
+<SeatList filtredMovies={movie.shows.seats} />
         </li>
       ))}
     </ul>

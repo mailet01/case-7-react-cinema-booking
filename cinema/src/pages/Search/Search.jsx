@@ -3,7 +3,10 @@ import { DateList } from "../../components/DateList";
 import { SeatList } from "../../components/SeatList";
 import { useState, useEffect } from "react";
 function Search({ cinemaData }) {
-  const [movieData, setMovieData] = useState(null);
+const handleClick = (evt) => {
+console.log("evt", evt);
+}
+const [movieData, setMovieData] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
   const [searchString, setSearchString] = useState("");
   console.log("från app.js cinemadata", cinemaData);
@@ -23,7 +26,7 @@ function Search({ cinemaData }) {
           onInput={(e) => setSearchString(e.target.value)}
           value={searchString}
         />
-        <button type="submit">search</button>
+        <button onClick={handleClick}>search</button>
       </div>
 
       {/* komponent */}
@@ -32,6 +35,7 @@ function Search({ cinemaData }) {
 <SeatList filteredMovies={filteredMovies} />
     </>
   );
+
 }
 
 export default Search;

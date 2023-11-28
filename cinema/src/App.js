@@ -1,6 +1,8 @@
 import React from 'react'
 import { useState, useEffect } from 'react';
 import ReactDOM from 'react-dom/client'
+
+
 import Welcome from "./pages/Welcome/Welcome";
 import Booking from "./pages/Booking/Booking";
 import Search from "./pages/Search/Search";
@@ -37,19 +39,17 @@ function App() {
     if (error) {
         return <div>error: {error.message}</div>
     }
+return (
+    <main>
+    <h1 className='cinema'>{cinemaData.cinema.name}</h1>
+    <Welcome />
+    <Booking cinemaData={cinemaData} />
+    <Search cinemaData={cinemaData} />
 
 
+</main>
 
-    return (
-        <main>
-            <h1 className='cinema'>{cinemaData.cinema.name}</h1>
-            <Welcome />
-            <Booking cinemaData={cinemaData} />
-            <Search cinemaData={cinemaData} />
-
-
-        </main>
-
+                          
     )
 }
 

@@ -1,3 +1,4 @@
+
 export function SeatList({ filteredMovies }) {
   const handleClick = (evt) => {
     alert("thank you for your booking");

@@ -1,13 +1,14 @@
 import React from 'react'
 import { useState, useEffect } from 'react';
 import ReactDOM from 'react-dom/client'
-
-
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Welcome from "./pages/Welcome/Welcome";
 import Booking from "./pages/Booking/Booking";
 import Search from "./pages/Search/Search";
 import './App.css';
+import { SeatList } from './components/SeatList';
 function App() {
+    
     const [cinemaData, setCinemaData] = useState(null);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
@@ -39,14 +40,33 @@ function App() {
     if (error) {
         return <div>error: {error.message}</div>
     }
-return (
-    <main>
+    const router = createBrowserRouter([
+        {
+          path: "/Welcome",
+          element: <Welcome />,
+        },
+        {
+          path: "/Booking",
+          element: <Booking />,
+        },
+        {
+          path: "/Search",
+          element: <Search cinemaData={cinemaData} />,
+          },
+{
+path: "/SeatList",
+element: <SeatList />,
+}
+
+
+      ]); 
+    
+    return (
+   <main>
     <h1 className='cinema'>{cinemaData.cinema.name}</h1>
-    <Welcome />
-    <Booking cinemaData={cinemaData} />
-    <Search cinemaData={cinemaData} />
 
-
+<RouterProvider router={router} />   
+<Search cinemaData={cinemaData} />
 </main>
 
                           

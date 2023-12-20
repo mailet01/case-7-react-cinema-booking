@@ -5,8 +5,10 @@ export function DateList({ filteredMovies }) {
       <ul>
         {filteredMovies.map((movie) =>
           movie.shows?.map((show) => <li key={show.time}>{show.time}</li>)
+        
         )}
       </ul>
+
     </>
   );
 }

@@ -46,8 +46,8 @@ function App() {
           element: <Welcome />,
         },
         {
-          path: "/Booking",
-          element: <Booking />,
+        path: "/Booking",
+          element: <Booking cinemaData={cinemaData} />,
         },
         {
           path: "/Search",
@@ -67,6 +67,7 @@ element: <SeatList />,
 
 <RouterProvider router={router} />   
 <Search cinemaData={cinemaData} />
+<Booking cinemaData={cinemaData} />
 </main>
 
                           

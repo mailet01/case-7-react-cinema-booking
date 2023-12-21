@@ -9,6 +9,17 @@ setNameInput(evt.target.innerText);
 const handleClick = (evt) => {
 alert("thank you for your booking")
 }
+const handleMovieChange = (evt) => {
+console.log("movie changed")
+console.log("evt", evt.target.value)
+ const movie = cinemaData.cinema.movies.find(movie => movie.title === "title")
+console.log("någon klickade på en film");
+ setSelectedMovie(movie)
+}
+const handleShowChange = (evt) => {
+console.log("show changed");
+console.log("evt", evt.target.value);
+}
 
 return (
 <>
@@ -17,8 +28,8 @@ return (
 <form>
 <input type="text" placeholder="your name" />
 <label htmlFor="movietitles" >chose movie</label>
-<select name="movietitles" id="movietitles">
-    {cinemaData.cinema.movies.map(movie => <option value={movie.title}>{movie.title}</option> )}
+<select name="movietitles" id="movietitles" onChange={handleMovieChange}>
+    {cinemaData.cinema.movies.map(movie => <option key={movie.title} value={movie.title}>{movie.title}</option> )}
 
 
 
@@ -27,9 +38,9 @@ return (
 </select>
 <label htmlFor="moviedate">chose date </label>
 
-<select name="movideate" id="moviedate">
+<select name="movideate" id="moviedate" onChange={handleShowChange}>
 {cinemaData.cinema.movies.map(movie => 
-movie.shows.map(show => <option value={show.time}>{show.time}</option>
+movie.shows.map(show => <option key={show.time} value={show.time}>{show.time}</option>
     )
     )}    
 </select>
@@ -37,7 +48,7 @@ movie.shows.map(show => <option value={show.time}>{show.time}</option>
 <select name="movieseats" id="movieseats">
 {cinemaData.cinema.movies.map(movie => 
 movie.shows.map(show => 
-show.seats.map(seat => <option value={seat.seatNumber}>{seat.seatNumber}{""} {seat.booked ? ("is booked") : ("available")} </option> 
+show.seats.map(seat => <option key={seat.seatNumber} value={seat.seatNumber}>{seat.seatNumber}{""} {seat.booked ? ("is booked") : ("available")} </option> 
     )
     )
     )}

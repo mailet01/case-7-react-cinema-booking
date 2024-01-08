@@ -12,7 +12,7 @@ alert("thank you for your booking")
 const handleMovieChange = (evt) => {
 console.log("movie changed")
 console.log("evt", evt.target.value)
- const movie = cinemaData.cinema.movies.find(movie => movie.title === "title")
+ const movie = cinemaData.cinema.movies.find(movie => movie.title === evt.target.value)
 console.log("någon klickade på en film");
  setSelectedMovie(movie)
 }
@@ -39,18 +39,13 @@ return (
 <label htmlFor="moviedate">chose date </label>
 
 <select name="movideate" id="moviedate" onChange={handleShowChange}>
-{cinemaData.cinema.movies.map(movie => 
-movie.shows.map(show => <option key={show.time} value={show.time}>{show.time}</option>
-    )
-    )}    
+
+{selectedMovie.shows?.map(show => <option value="{show.time}">{show.time}</option> )}
 </select>
 <label htmlFor="movieseats">chose seat</label>
 <select name="movieseats" id="movieseats">
-{cinemaData.cinema.movies.map(movie => 
-movie.shows.map(show => 
-show.seats.map(seat => <option key={seat.seatNumber} value={seat.seatNumber}>{seat.seatNumber}{""} {seat.booked ? ("is booked") : ("available")} </option> 
-    )
-    )
+{selectedMovie.shows?.map(show => 
+show.seats?.map(seat => <option value="{seat.seatNumber}">{seat.seatNumber}</option> )
     )}
 </select>
 <button onClick={handleClick}>book now</button>
